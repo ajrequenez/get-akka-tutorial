@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1705.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "getakka-tutorial", "getakka-tutorial\getakka-tutorial.csproj", "{8508AB9C-F6BB-439F-9932-A04A94767C7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "getakka-tutorial.tests", "getakka-tutorial.tests\getakka-tutorial.tests.csproj", "{14FD3A42-646D-4E0B-9632-FCBF8545771A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8508AB9C-F6BB-439F-9932-A04A94767C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8508AB9C-F6BB-439F-9932-A04A94767C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8508AB9C-F6BB-439F-9932-A04A94767C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14FD3A42-646D-4E0B-9632-FCBF8545771A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14FD3A42-646D-4E0B-9632-FCBF8545771A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14FD3A42-646D-4E0B-9632-FCBF8545771A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14FD3A42-646D-4E0B-9632-FCBF8545771A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
