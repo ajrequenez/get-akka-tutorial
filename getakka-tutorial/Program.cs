@@ -11,4 +11,5 @@ using (var system = ActorSystem.Create("iot-system"))
 
     // Exit the system after ENTER is pressed
     Console.ReadLine();
+
 }
