@@ -8,6 +8,7 @@ namespace getakka_tutorial
 	{
         private Dictionary<string, IActorRef> deviceIdToActor = new Dictionary<string, IActorRef>();
         private Dictionary<IActorRef, string> actorToDeviceId = new Dictionary<IActorRef, string>();
+        // private long nextCollectionId = 0L;
 
         protected string GroupId { get; }
         protected ILoggingAdapter Log { get; } = Context.GetLogger();
@@ -44,6 +45,9 @@ namespace getakka_tutorial
                     break;
                 case RequestDeviceList deviceList:
                     Sender.Tell(new ReplyDeviceList(deviceList.RequestId, new HashSet<string>(deviceIdToActor.Keys)));
+                    break;
+                case RequestAllTemperatures r:
+                    Context.ActorOf(DeviceGroupQuery.Props(actorToDeviceId, r.RequestId, Sender, TimeSpan.FromSeconds(3)));
                     break;
                 case Terminated t:
                     var deviceId = actorToDeviceId[t.ActorRef];
